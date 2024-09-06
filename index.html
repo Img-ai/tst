@@ -1,200 +1,1368 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>News Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+  <meta charset="utf-8">
+  <title>Soins de la peau pour sports extrêmes, aventures ou défis urbains - Storm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Produits puissants, naturels, conçus en France pour les activités outdoor.  Respectueux de l’Homme et de l’environnement. Testés en condition. Soins réparateurs. Visage. Mains. Lèvres. " />
+<meta name="description" content="Produits cosmétiques naturels de haute performance. Conçus en France pour vos activités outdoor. Aucune barrière pas même celle de la peau, nos produits permettent la quête de sensations et le dépassement de soi." />
+  <link href="https://https://storm-skinwear.fr/" rel="canonical" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HQBvDymWYJI8OULz4zzg3CX8YP1RG0ag2fng6A8LsOG6trNNc5CSesDuSGLeEJ-uRN2oKrX3qPgzAnbMkGgLIQ" />
 
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <script src="/assets/solidus_starter_frontend-fd5df7f0179e69828ba2b1b65ebbf9844c0027a58ebe2583c1f13a4be00b43db.js"></script>
+  <link rel="stylesheet" href="/assets/solidus_starter_frontend-16447b3c0de9d8970ec78e24d9636b2952285d1555e806c92cd8a36cb2712846.css" media="screen" />
 
-        .header {
-            background-color: #1a1a1a;
-            padding: 20px 0;
-        }
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-f309baafa3ae5ad6ccee3e7362118b87678d792db8e8ab466c4fa284dd3a4700.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+    "@stripe/stripe-js": "https://ga.jspm.io/npm:@stripe/stripe-js@1.54.1/dist/stripe.esm.js",
+    "controllers/application": "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/cart_page_controller": "/assets/controllers/cart_page_controller-7a9fc61751f1402b31444f6bfeca05fb185c77e0b72e7bdf0e7addcfcb38419d.js",
+    "controllers/checkout_payment_controller": "/assets/controllers/checkout_payment_controller-eba23be953cc574420b12d43df755e534ebfb9bfa41911796f6429c6495635ea.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+    "controllers/locale_selector_controller": "/assets/controllers/locale_selector_controller-8c6c5c5b12c2ec9f9f2217eb9f0aceec449af9931a9706e5cf8759bd110c3afd.js",
+    "controllers/search_controller": "/assets/controllers/search_controller-4905d4a0bb8883f2638b4b5eb50a66305f324cee339cd0ddf99fc86053fe6919.js",
+    "controllers/solidus_stripe_confirm_controller": "/assets/controllers/solidus_stripe_confirm_controller-82f01f315d18de4e4129da111d95add760a3141145b0e8ebafb31ca3d6f2783d.js",
+    "controllers/solidus_stripe_payment_controller": "/assets/controllers/solidus_stripe_payment_controller-cf6be31aeb26b420a488bef783cc3218cd4965e2e5ff5520eb0b9374d4b1dab2.js",
+    "controllers/top_bar_controller": "/assets/controllers/top_bar_controller-081e713c4ad4db23d9f720fff4d20c5e4974156e0d76868acd39624935d4f452.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js">
+<link rel="modulepreload" href="/assets/turbo.min-f309baafa3ae5ad6ccee3e7362118b87678d792db8e8ab466c4fa284dd3a4700.js">
+<link rel="modulepreload" href="/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
+<script src="/assets/es-module-shims.min-4ca9b3dd5e434131e3bb4b0c1d7dff3bfd4035672a5086deec6f73979a49be73.js" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+  <link rel="icon" type="image/x-icon" href="https://mymira-zone.b-cdn.net/Pictures/storm.ico">
 
-        .logo h1 {
-            color: #fff;
-            float: left;
-        }
+  <!-- Meta Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '170367516071386');
+    fbq('track', 'PageView');
 
-        .navbar ul {
-            float: right;
-            list-style: none;
-        }
+    trackConversion("page_view")
+</script>
 
-        .navbar ul li {
-            display: inline;
-            margin-left: 20px;
-        }
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-WCLCFMFS');</script>
+<!-- End Google Tag Manager -->
 
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=170367516071386&ev=PageView&noscript=1"
+  /></noscript>
+<!-- End Meta Pixel Code -->
 
-        .hero {
-            background-image: url('hero-image.jpg');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 150px 0;
-        }
-
-        .hero h2 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            background-color: #ff6347;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .news-grid {
-            padding: 50px 0;
-        }
-
-        .news-item {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .news-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .news-item h3 {
-            font-size: 24px;
-            margin: 15px 0;
-        }
-
-        .news-item p {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        .news-item .read-more {
-            color: #ff6347;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer p {
-            margin-bottom: 10px;
-        }
-
-        .social {
-            list-style: none;
-        }
-
-        .social li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        .social li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
+  
 </head>
-<body>
+
+
+
+
+
+<div class="isDesktop" style="display: none"></div>
+<div class="currentDataIdOrder" data-id="0"></div>
+
+  <div class="cartPopupLayer" style=" display: none;    width: 100%;
+  /* min-height: 100%; */
+  background-color: #0a0a0a;
+  height: 100vh;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 22;">
+</div>
+
+<div class="cartPopup" style="display: none;
+  width: 66%;
+  position: absolute;
+  background-color: white;
+  margin-left: 17%;
+  z-index: 25;
+  border-radius: 5px;
+  top: 20%;">
+  <div class="flexy stormyBackground" style="padding: 2%; padding-top: 30px;">
+    <div class="cartPopupClose bigFont whiteColor" style="width: 20%; cursor: pointer">
+      X
+    </div>
+    <div class="centeredText allCaps bigFont clearFont whiteColor" style="width: 60%">
+      Votre panier
+    </div>
+    <div style="width: 20%"></div>
+  </div>
+
+  <div class="">
+    <div class="">
+      <div class="" id="cart-detail" data-hook>
+        <div class="current_cart" style="padding: 2%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forcedCenteredText flexy topMargin" style="justify-content: center;">
+    <div class="actionButton cartPopupClose" style="width: 30%; background-color: lightgrey">
+      Continuer
+    </div>
+
+    <a href="/cart" class="actionButton checkoutBlackButton" style="width: 30%">
+      Terminer
+    </a>
+  </div>
+</div>
+    <div class="newsletterPopupLayer" style="    width: 100%; display: none;
+  /* min-height: 100%; */
+  background-color: #0a0a0a;
+  height: 100vh;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 22;">
+</div>
+
+<div class="newsletterPopup" style="
+width: 66%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-left: 17%;
+  z-index: 25;
+  border-radius: 5px;
+  top: 20%;">
+  <div class="flexy stormyBackground" style="padding: 2%; padding-top: 30px;">
+    <div class="newsletterPopupClose bigFont whiteColor" style="width: 20%; cursor: pointer">
+      X
+    </div>
+    <div class="centeredText allCaps bigFont clearFont whiteColor" style="width: 60%">
+      Une offre pour vous
+    </div>
+    <div style="width: 20%"></div>
+  </div>
+
+  <div class="newsletterPopupAction">
+    <div style="width: 100%;padding: 20px;" class="stormyBackground">
+  <div style="display: flex;">
+    <div style="width: 15%;"></div>
+    <div style="width: 70%;" class="centeredText">
+      <form action="/together_result" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gwooh6783YB14hBsYClNPcMzF6f9dhZiMxw_ilVxhRyyzG7xeeDLE9DHgd4HiDsDYJcEpQUo_mWRBbvrkv2hGQ" autocomplete="off" />
+        <div class="whiteColor baseFont">
+          <div class="stormTitle clearFont">
+            10% de réduction sur votre première commande
+          </div>
+          <div>
+            Abonnez vous à la newsletter pour ne rien louper et recevoir votre code promo
+          </div>
+
+          <div style="margin-top: 40px;">
+            <input class="newsletterEmailField" placeholder="Email" type="email" name="email" id="email" />
+          </div>
+        </div>
+        <div style="text-align: center;margin-top: 2%;">
+          <input type="submit" name="commit" value="Je m&#39;abonne" class="actionButton actionNewsletterButton" data-disable-with="Je m&#39;abonne" />
+        </div>
+</form>    </div>
+    <div style="width: 15%;"></div>
+  </div>
+
+</div>
+
+<style>
+    .newsletterSecondBlock {
+        padding: 2% !important;
+    }
+
+
+    .blackButton:hover {
+        opacity: 0.8;
+    }
+
+    .newsletterEmailField {
+        font-size: 1.4em !important;
+        border: 2px;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 3px solid white !important;
+        background: none !important;
+        border-radius: 0px !important;
+    }
+
+    .newsletterEmailField::placeholder {
+        color: white !important;
+    }
+
+</style>
+  </div>
+
+</div>
+  <body class="one-col" id="default" style="padding-top: 8%" data-turbo="false">
+
+
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>NewsToday</h1>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">World</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Tech</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Entertainment</a></li>
-                </ul>
-            </nav>
+    <div>
+      <div class="welcomeMessageContainer stormyBackground" style="">
+        <div class="clearFont">
+          <div class="welcomeMessageContent">
+            <p class="p1">⚡️ 2 <a title="stick anti-frottements" href="https://www.storm-skinwear.fr/products/3-sticks-anti-frottements-50ml">sticks anti-frottements</a> achet&eacute;s, le 3e &agrave; -40% ⚡️</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+    <div class="headerContainer">
+      <div class="top-bar" data-controller="top-bar">
+  <div class="miraHamburgerContainer flexy" style="width: 5%; margin-top: -10px;">
+    <div style="width: 15%"></div>
+    <div class="miraHamburger" style="width: 70%; ">
+      <img class="fullWidth" alt="Notre accordéon, pour déplier les catégories de produits" src="/assets/hamburger_menu-58af072cb1c0c3099a0b7498b605900a69660bd520034bb46590f99b593f6153.png" />
+    </div>
+    <div style="width: 15%"></div>
+  </div>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Breaking News: World Headlines</h2>
-            <p>Stay updated with the latest news from around the world.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+  <figure class="logo">
+    <a href="/"><img class="miraMenuLogo" src="/assets/storm-black-logo-short-f89f6783f02f232c56650c73c1ecf922320b81af2780a512fdbf95b0a0958862.png" /></a>
+  </figure>
 
-    <section class="news-grid">
-        <div class="container">
-            <div class="news-item">
-                <img src="news1.jpg" alt="News 1">
-                <h3>Latest in Politics</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="news-item">
-                <img src="news2.jpg" alt="News 2">
-                <h3>Economy & Business</h3>
-                <p>Nulla convallis egestas rhoncus. Donec facilisis fermentum sem.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="news-item">
-                <img src="news3.jpg" alt="News 3">
-                <h3>Tech Trends</h3>
-                <p>Aliquam id dui sem. Phasellus semper consectetur libero, vitae feugiat arcu.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-    </section>
+  <div class="search-block" style="">
+  <img class="searchIcon" src="/assets/shared/search_black-4c114cca7d18ebcae971d8c59d2c7fc349e6a161102a2e2786aacd7e70e85cf7.png" />
+</div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 NewsToday. All Rights Reserved.</p>
-            <ul class="social">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+  <div class="cart-link clearFont" id="link-to-cart" data-top-bar-target="cartLink">
+    <noscript>
+      <a href="/cart">Panier</a>
+    </noscript>
+  </div>
+
+
+    <a class="auth-link clearFont" href="/login">Connexion</a>
+</div>
+
+<div class="miraVerticalMenu" style="display: none">
+  <div style="width: 25%;">
+    <div class="stormyBackground" style="height: 3px"></div>
+  </div>
+  <div class="flexy clearFont">
+    <div style="width: 25%; margin-left: 2%">
+      <a class="topMargin" href="/products" style="display: block">
+  Tous les produits
+</a>
+      <a class="" href="/t/categories/nouveautes" style="display: block">
+  Nouveautés
+</a>
+      <a class="" href="/t/categories/bestsellers" style="display: block">
+  Best Sellers
+</a>
+      <a class="topMargin" href="/t/categories/corps" style="display: block">
+  Corps
+</a>
+      <a class="topMargin" href="/t/categories/visage" style="display: block">
+  Visage
+</a>
+      <a class="" href="/t/categories/mains" style="display: block">
+  Mains
+</a>
+      <a class="" href="/t/categories/levres" style="display: block">
+  Lèvres
+</a>
+      <a class="topMargin" href="/home/story" style="display: block">
+  Histoire
+</a>
+      <a class="topMargin" href="/home/engagements" style="display: block">
+  Engagements
+</a>
+      <a class="" href="/home/contact" style="display: block">
+  Contact
+</a>
+      <a class="" href="/blog_articles" style="display: block">
+  Blog
+</a>
+      <a class="" href="/sponsorships" style="display: block">
+  Parrainage
+</a>
+    </div>
+
+    <div style="width: 72%;">
+      <div class="flexy">
+        <div style="width: 10%"></div>
+        <a style="width: 35%; cursor: pointer" class="centeredText" href="/products">
+          <img class="fullWidth" src="/assets/shared/menu-utilisation-629fd1bc5b5ff16e8006cef36b369960fd2ae749dca80cb331e4e498a1590a44.jpg" />
+          <div>
+            Tous nos produits
+          </div>
+        </a>
+        <div style="width: 10%"></div>
+        <a style="width: 35%; cursor: pointer" class="centeredText" href="/t/categories/nouveautes">
+          <img class="fullWidth" src="/assets/products/photo_c2-12458dd92397da0cac558baa8cff39db4b263f67bad7f91c4fabb85c386f053a.jpg" />
+          <div>
+            Nouveautés
+          </div>
+        </a>
+        <div style="width: 10%"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="searchContainer" style="display: none">
+  <div class="searchTopBar stormGreyBackground">
+    <div class="miraSearchInput" data-searchurl="/products/products_for_search"
+         style="margin-top: 10px;margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px">
+      <div class="centeredText">
+        <input class="prompt miraSearch baseFont" type="search" placeholder="Visage, mains, baumes, allez y ..."
+               name="keywords" id="keywords" style="color: black; padding: 10px; width: 70%;">
+      </div>
+    </div>
+  </div>
+  <div class="flexy">
+    <div class="sideColumn">
+
+    </div>
+    <div class="centralColumn">
+      <div class="products_list">
+
+      </div>
+    </div>
+    <div class="sideColumn">
+
+    </div>
+  </div>
+
+
+</div>
+
+<style>
+    .searchContainer {
+        width: 100%;
+    }
+
+    .searchTopBar {
+
+    }
+</style>
+    </div>
+
+  </header>
+
+
+
+
+
+<main>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLCFMFS"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <a style="margin-bottom: -40px; display: block" href="/products">
+  <img class="fullWidth" src="/assets/home/banniere_ordi-23c56c11af7ba2436d6cbc41d33b8596f63198aa3f0805d43e3d688b0832ff30.jpg" />
+</a>
+
+<div class="basePadding">
+  <div class="clearFont stormSlogan bottomMargin bigTopMargin">
+    <div class="baseFont">
+      Une seconde peau dans les climats les plus extrêmes. Produits hautement concentrés en actifs naturels et puissants
+      pour vos activités physiques en plein air.
+    </div>
+
+  </div>
+  <div class="clearFont stormTitle">
+    Best Sellers
+  </div>
+  <div class="flexy topMargin" style="align-items: center;">
+    <div style="width: 20%">
+      
+<div id="product_8" itemscope itemtype="http://schema.org/Product">
+  <div class="centeredText">
+    <div class="opacityHover">
+      <a href="/products/baume-anti-frottements-50ml">
+        <img itemprop="image" class="fullWidth" alt="baume-anti-frottements-50ml" src="https://storm-skinwear.s3.eu-west-3.amazonaws.com/8aaoe7vplgv238humpfnx4q68q1f?response-content-disposition=inline%3B%20filename%3D%22Antifrottements.jpg%22%3B%20filename%2A%3DUTF-8%27%27Antifrottements.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2N4GYMDNG4I5VGGC%2F20240906%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240906T132651Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c150a200c848da0d771f9aeed66c846ec93c8bb4930262b6c99bc961fb78c764" />
+      </a>
+    </div>
+  </div>
+  <div class="content noBorderTopContent centeredText" style="margin-top: 10px;">
+    <a class="linkToProductName allCaps baseFont centeredText" itemprop="name" content="Baume anti-frottements - 50ml" title="Baume anti-frottements - 50ml" href="/products/baume-anti-frottements-50ml">Baume anti-frottements - 50ml</a>
+    <div class="flexy" style="justify-content: center; margin-top: 10px;  margin-bottom: 10px; font-size: 16px">
+
+      <div class="meta" style="margin-top: -2px;">
+            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <a class="price selling forcedBlack baseFont" itemprop="price"
+                 content="12.9" href="/products/baume-anti-frottements-50ml">
+                12.9
+                € - 4.89 <img class="mini_star" src="/assets/shared/star-filled-3cff58c672b790f6ece32ef9a6a52b1d1a2ebb345c174c7e8e5fe856bf919458.png" />
+                (55.0)
+              </a>
+            </span>
+      </div>
+    </div>
+    <a class="smallActionButton whiteColor" href="/products/baume-anti-frottements-50ml">
+      Ajouter
+    </a>
+
+
+  </div>
+</div>
+    </div>
+    <div style="width: 4%">
+
+    </div>
+    <div style="width: 20%">
+      
+<div id="product_42" itemscope itemtype="http://schema.org/Product">
+  <div class="centeredText">
+    <div class="opacityHover">
+      <a href="/products/stick-anti-frottements-50ml">
+        <img itemprop="image" class="fullWidth" alt="stick-anti-frottements-50ml" src="https://storm-skinwear.s3.eu-west-3.amazonaws.com/mcjqc41y7trz36cwlmw3lqxbqabq?response-content-disposition=inline%3B%20filename%3D%22Stick_anti-frottements%20copie.png%22%3B%20filename%2A%3DUTF-8%27%27Stick_anti-frottements%2520copie.png&amp;response-content-type=image%2Fpng&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2N4GYMDNG4I5VGGC%2F20240906%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240906T132651Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0f4ad6cacb5553ef2eeb67a86464269b5538e9c97dc1974a326af091cfeda2e5" />
+      </a>
+    </div>
+  </div>
+  <div class="content noBorderTopContent centeredText" style="margin-top: 10px;">
+    <a class="linkToProductName allCaps baseFont centeredText" itemprop="name" content="NOUVEAU - Stick anti-frottements" title="NOUVEAU - Stick anti-frottements" href="/products/stick-anti-frottements-50ml">NOUVEAU - Stick anti-frottements</a>
+    <div class="flexy" style="justify-content: center; margin-top: 10px;  margin-bottom: 10px; font-size: 16px">
+
+      <div class="meta" style="margin-top: -2px;">
+            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <a class="price selling forcedBlack baseFont" itemprop="price"
+                 content="14.9" href="/products/stick-anti-frottements-50ml">
+                14.9
+                € - 5.0 <img class="mini_star" src="/assets/shared/star-filled-3cff58c672b790f6ece32ef9a6a52b1d1a2ebb345c174c7e8e5fe856bf919458.png" />
+                (1.0)
+              </a>
+            </span>
+      </div>
+    </div>
+    <a class="smallActionButton whiteColor" href="/products/stick-anti-frottements-50ml">
+      Ajouter
+    </a>
+
+
+  </div>
+</div>
+    </div>
+    <div style="width: 4%">
+
+    </div>
+    <div style="width: 20%">
+      
+<div id="product_43" itemscope itemtype="http://schema.org/Product">
+  <div class="centeredText">
+    <div class="opacityHover">
+      <a href="/products/3-sticks-anti-frottements-50ml">
+        <img itemprop="image" class="fullWidth" alt="3-sticks-anti-frottements-50ml" src="https://storm-skinwear.s3.eu-west-3.amazonaws.com/rf2ui4gapwsmdvwkqp9bi23h66hd?response-content-disposition=inline%3B%20filename%3D%22packs.jpg%22%3B%20filename%2A%3DUTF-8%27%27packs.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2N4GYMDNG4I5VGGC%2F20240906%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240906T132651Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=77b75a1ddf3ca7792f9a4ef80f9b48d96cdd5f0ed0e49da490aceafe1b6951cc" />
+      </a>
+    </div>
+  </div>
+  <div class="content noBorderTopContent centeredText" style="margin-top: 10px;">
+    <a class="linkToProductName allCaps baseFont centeredText" itemprop="name" content="3 Sticks Anti-frottements - 50ml" title="3 Sticks Anti-frottements - 50ml" href="/products/3-sticks-anti-frottements-50ml">3 Sticks Anti-frottements - 50ml</a>
+    <div class="flexy" style="justify-content: center; margin-top: 10px;  margin-bottom: 10px; font-size: 16px">
+
+      <div class="meta" style="margin-top: -2px;">
+            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <a class="price selling forcedBlack baseFont" itemprop="price"
+                 content="38.9" href="/products/3-sticks-anti-frottements-50ml">
+                38.9
+                € - 5.0 <img class="mini_star" src="/assets/shared/star-filled-3cff58c672b790f6ece32ef9a6a52b1d1a2ebb345c174c7e8e5fe856bf919458.png" />
+                (1)
+              </a>
+            </span>
+      </div>
+    </div>
+    <a class="smallActionButton whiteColor" href="/products/3-sticks-anti-frottements-50ml">
+      Ajouter
+    </a>
+
+
+  </div>
+</div>
+    </div>
+    <div style="width: 4%">
+
+    </div>
+    <div style="width: 28%" class="centeredText">
+      <a href="/products" class="homeActionLink clearFont supFont">
+        Voir tous les produits
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="stormyBackground baseFont basePadding whiteColor  ">
+  <div class="clearFont stormTitle" style="font-weight: 200">
+    Notre mission ?
+  </div>
+  <div class="" style="font-size: 24px;">
+    Permettre de vous dépasser sans aucune limite, pas
+    même celle de la peau. La protéger, la réparer peu
+    importe les conditions météo et profiter pleinement
+    de vos activités.
+  </div>
+
+
+</div>
+
+<div class="basePadding">
+  <div class="clearFont stormTitle" style="font-weight: 200">
+    Avec des produits
+  </div>
+
+  <div class="flexy bottomMargin">
+    <div class="advantageBlock topMargin">
+      <div class="advantagePicture">
+        <img class="fullWidth" src="/assets/shared/circle-check-f3d083d76f22a3270a8ac1200cfb60c31ca3c645a9af2aa90dd1630feb42af8c.png" />
+      </div>
+      <div>
+        EFFICACES
+      </div>
+      <div>
+        Aucune teneur en eau
+      </div>
+      <div>
+        actifs très concentrés
+      </div>
+    </div>
+
+    <div class="advantageBlock topMargin">
+      <div class="advantagePicture">
+        <img class="fullWidth" src="/assets/shared/natural2-bc785a17a74e15382a89ee36ed3c8c49261e9092e0f4e56b318313c3ce683c74.png" />
+      </div>
+
+      <div>
+        NATURELS
+      </div>
+      <div>
+        Compositions naturelles
+      </div>
+      <div>
+        huiles végétales
+      </div>
+    </div>
+
+    <div class="advantageBlock topMargin">
+      <div class="advantagePicture">
+        <img class="fullWidth" src="/assets/shared/clock-18879999e467dfecf0f33f6b34e3ad42d8ff762bbfb0f321b4d56e920eed848b.png" />
+      </div>
+      <div>
+        ÉCONOMIQUES
+      </div>
+      <div>
+        4 mois d’utilisation en
+      </div>
+      <div>
+        soin quotidien
+      </div>
+    </div>
+
+    <div class="advantageBlock topMargin">
+      <div class="advantagePicture">
+        <img class="fullWidth" src="/assets/shared/recycle-8fb0f2bc2caa4da6691f4c0a5904586585fbcba91db9e77343d61bcad0ed4fe4.png" />
+      </div>
+      <div>
+        DURABLES
+      </div>
+      <div>
+        Aluminium recyclable
+      </div>
+      <div>
+        à l’infini
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<style>
+    .advantageBlock {
+        display: flex;
+        width: 22%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .advantagePicture {
+        width: 40px;
+    }
+</style>
+
+<div class="stormGreyBackground centeredText topPadding bottomPadding flexy">
+  <div class="clearFont stormTitle sloganBlock">
+    Be brave.
+  </div>
+  <div class="clearFont stormTitle sloganBlock">
+    Be limitless.
+  </div>
+  <div class="clearFont stormTitle sloganBlock">
+    Be unstoppable.
+  </div>
+  <div class="sloganBlock">
+
+  </div>
+</div>
+
+<style>
+    .sloganBlock {
+        width: 25%;
+    }
+</style>
+
+<div class="topPadding bottomPadding">
+  <div class="baseFont basePadding justifiedText" style="font-size: 16px;">
+    No barrier, not even your skin.
+    <br>
+    Storm skinwear permet de vous dépasser sans aucune limite, pas même celle de la peau. La protéger et la réparer peu
+    importe les conditions météo, aller plus loin et profiter pleinement.
+  </div>
+</div>
+
+<div>
+  <div class="stormyBackground" style="height: 4px; width: 33%;">
+
+</div>
+</div>
+
+<div class="basePadding">
+  <div class="clearFont stormTitle">
+    Conditions météorologiques
+  </div>
+  <div class="flexy topMargin clearFont" style="align-items: center;">
+    <a style="width: 20%" href="/products">
+      <div class="redGradient whiteColor conditionsButton bottomMargin flexy">
+        <div>
+          Climat extrême
         </div>
-    </footer>
+        <div>
+          <img class="productSPicture" src="/assets/products/storm_stormy-1f20257b1a8ecfd6e467a2c27e02775a6b671d566d284ae9ac92ca1aad5f8ced.png" />
+        </div>
+      </div>
+      <img class="fullWidth" src="/assets/home/condition-1-fe953ce5f8a201a89a793904a1f0e330ea3c504392a64129896c9cdc2dc10844.jpg" />
+
+    </a>
+    <div style="width: 4%">
+
+    </div>
+    <a style="width: 20%" href="/products">
+      <div class="orangeGradient whiteColor conditionsButton bottomMargin flexy">
+
+        <div>
+          Climat difficile
+        </div>
+        <div>
+          <img class="productSPicture" src="/assets/products/storm_windy-f00b9166cb08e1dff9d94bb314a2ed87da084735d86410008d158eb296d8d751.png" />
+        </div>
+      </div>
+      <img class="fullWidth" src="/assets/home/condition-2-1fbfb7bc655075ce756062ca679a749c256871c0ee1a7fa55264c4239d12f30e.jpg" />
+
+    </a>
+    <div style="width: 4%">
+
+    </div>
+    <a style="width: 20%" href="/products">
+      <div class="yellowGradient whiteColor conditionsButton bottomMargin flexy">
+
+        <div>
+          Climat urbain
+        </div>
+        <div>
+          <img class="productSPicture" src="/assets/products/storm_cloudy-2aa0b82caf5b6a2f131b51ea5a8ff648f558c9fcebc9853c72a819e66d66baec.png" />
+        </div>
+      </div>
+      <img class="fullWidth" src="/assets/home/condition-3-796df745d756fca2d1ccfbcd3fa8e9192390ed47a85568b214a5998ad55bc97b.jpg" />
+
+    </a>
+    <div style="width: 4%">
+
+    </div>
+    <div style="width: 28%" class="centeredText">
+      <a href="/home/story" class="homeActionLink clearFont supFont">
+        Histoire
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<style>
+    .conditionsButton {
+        padding: 20px;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .productSPicture {
+        width: 40px;
+    }
+</style>
+
+<div class="basePadding">
+  <div class="clearFont stormTitle">
+    Catégories
+  </div>
+  <div class="flexy topMargin" style="align-items: center;">
+    <a style="width: 20%" href="/t/categories/visage">
+      <img class="fullWidth" src="/assets/home/1-a20217ec438cfced66fd760890721e89a240504682028b84e1daa2ac45dff40c.jpg" />
+    </a>
+    <div style="width: 4%">
+
+    </div>
+    <a style="width: 20%" href="/t/categories/mains">
+      <img class="fullWidth" src="/assets/home/2-f34207822b6c066d495a8e2cbd31b9cd534c578cdddae01fe5b08f972b955441.jpg" />
+    </a>
+    <div style="width: 4%">
+
+    </div>
+    <a style="width: 20%" href="/t/categories/levres">
+      <img class="fullWidth" src="/assets/home/3-684d16d9199734d701add50b470552add051fae09d83721506c9dcdc367d6fe9.jpg" />
+    </a>
+    <div style="width: 4%">
+
+    </div>
+
+    <a style="width: 20%" href="/t/categories/corps">
+      <img class="fullWidth" src="/assets/home/categorie-desktop-corps-a8563acf2ac879e7ec1d0ae1e610d48e20bb165443903408a1ea37a5d8d74e11.jpg" />
+    </a>
+
+
+  </div>
+
+  <div style="" class="centeredText topMargin">
+    <a href="/products" class="homeActionLink clearFont supFont">
+      Voir tous les produits
+    </a>
+  </div>
+</div>
+
+<div>
+  <div class="stormyBackground" style="height: 4px; width: 33%;">
+
+</div>
+</div>
+
+<div class="basePadding bigBottomMargin">
+  <div class="flexy baseFont">
+    <div style="width: 35%">
+      <div style="width: 100%">
+        <img class="fullWidth" src="/assets/home/Balle_de_match-min-f5803fd66b69729c44057f18a2db321693daef0200b0ef6ca8762de894c8b81f.jpg" />
+      </div>
+
+      <div class="stormTitle bigTopMargin bottomMargin centeredText clearFont" style="width: 100%;">
+        Balle de match !
+      </div>
+
+    </div>
+
+    <div style="width: 5%">
+    </div>
+
+    <div style="width: 60%">
+      <div style="width: 100%;">
+        <div class="matchLineTitle">
+          <div class="stormMatchCellTitle stormyBackground">
+            STORM
+          </div>
+
+          <div class="brandMatchCellTitle" style="background-color: lightgray">
+            AUTRES MARQUES
+          </div>
+        </div>
+      </div>
+
+      <div class="bigTopMargin" style="width: 100%;">
+        <div class="matchLineContainer">
+          <div class="headerMatchCell">
+            Teneur en eau
+          </div>
+          <div class="matchLine">
+            <div class="stormMatchCell orangeColor">
+              Aucune teneur en eau
+              <br>
+              actifs concentrés
+              <br>
+              efficacité maximale
+            </div>
+            <div class="stormDivider">
+              <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+            </div>
+            <div class="brandMatchCell">
+              Importante teneur en eau
+              <br>
+              actifs dilués
+              <br>
+              perte en efficacité
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="matchLineDivider"></div>
+
+      <div class="matchLineContainer">
+        <div class="headerMatchCell">
+          Naturalité
+        </div>
+        <div class="matchLine">
+          <div class="stormMatchCell orangeColor">
+            100%
+          </div>
+          <div class="stormDivider">
+            <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+          </div>
+          <div class="brandMatchCell">
+            Ingrédients controversés
+          </div>
+        </div>
+      </div>
+
+      <div class="matchLineDivider"></div>
+
+      <div class="matchLineContainer">
+        <div class="headerMatchCell">
+          Origine
+        </div>
+        <div class="matchLine">
+          <div class="stormMatchCell orangeColor">
+            Made in France
+          </div>
+          <div class="stormDivider">
+            <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+          </div>
+          <div class="brandMatchCell">
+            Inconnue
+          </div>
+        </div>
+
+      </div>
+
+      <div class="matchLineDivider"></div>
+
+
+      <div class="matchLineContainer">
+        <div class="headerMatchCell">
+          Transparence
+        </div>
+        <div class="matchLine">
+          <div class="stormMatchCell orangeColor">
+            Transparent et éthique
+          </div>
+          <div class="stormDivider">
+            <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+          </div>
+          <div class="brandMatchCell">
+            Pas de transparence
+          </div>
+        </div>
+
+      </div>
+
+      <div class="matchLineDivider"></div>
+
+
+      <div class="matchLineContainer">
+        <div class="headerMatchCell">
+          Packaging
+        </div>
+        <div class="matchLine">
+          <div class="stormMatchCell orangeColor">
+            Durable
+          </div>
+          <div class="stormDivider">
+            <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+          </div>
+
+          <div class="brandMatchCell">
+            Plastique
+          </div>
+        </div>
+
+      </div>
+
+      <div class="matchLineDivider"></div>
+
+
+      <div class="matchLineContainerLine">
+        <div class="headerMatchCell">
+          Praticité
+        </div>
+        <div class="matchLine">
+          <div class="stormMatchCell orangeColor">
+            À emmener partout
+          </div>
+          <div class="stormDivider">
+            <img class="fullWidth" src="/assets/shared/lightening-6a411e54cfe01b9f2192490b4eb13112e5e8b05181771a0770d3e243c7ee546e.png" />
+          </div>
+          <div class="brandMatchCell">
+            Peu pratique
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+    .matchLine {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .matchLineTitle {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+        display: flex;
+    }
+
+    .headerMatchCell {
+        width: 100%;
+        font-variant-caps: all-petite-caps;
+        text-align: center;
+    }
+
+    .stormMatchCell {
+        width: 45%;
+        text-align: center;
+
+    }
+
+    .stormMatchCellTitle {
+        width: 50%;
+    }
+
+    .brandMatchCellTitle {
+        width: 50%;
+    }
+
+    .stormDivider {
+        width: 10%;
+    }
+
+    .brandMatchCell {
+        width: 45%;
+        text-align: center;
+    }
+
+    .matchLineContainer {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .smallLight {
+        width: 50px;
+    }
+
+    .matchLineDivider {
+        width: 85%;
+        height: 1px;
+        background-color: #f0f0f0;
+        margin: auto;
+    }
+</style>
+
+<div>
+  <div class="stormyBackground" style="height: 4px; width: 33%;">
+
+</div>
+</div>
+
+<div class="basePadding">
+  <div class="flexy clearFont">
+    <div class="" style="width: 50%;">
+
+      <div class="stormTitle bottomMargin">
+        #Beunstoppable
+      </div>
+      <div class="baseFont justifiedText">
+        Revenir aux besoins primaires de la peau avec des produits nourrissants qui combattent les agressions
+        extérieures c’est ce qui nous anime aujourd’hui.
+        <br>
+        <br>
+        On ne parle pas d’anti-âge, de booster d’éclat mais bel et bien
+        de skinwear, vêtements pour la peau capables de faire face au froid, à la neige, au vent, à l'eau salée et à la
+        pollution.
+      </div>
+
+      <div class="supFont" style="text-align: right">
+        No limit not even your skin
+      </div>
+    </div>
+    <div class="" style="width: 5%;">
+
+    </div>
+    <div class="" style="width: 40%;">
+      <img class="fullWidth" src="/assets/shared/unstoppable-095ad6f39a79e14a1d98e94d04c847e1e62cf9c87c3ee9f35d97c654c1ac7b91.jpg" />
+    </div>
+    <div class="" style="width: 5%;">
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<div style="width: 100%;padding: 20px;" class="stormyBackground">
+  <div style="display: flex;">
+    <div style="width: 15%;"></div>
+    <div style="width: 70%;" class="centeredText">
+      <form action="/together_result" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="RQ65QX666sWgM8n8m2SCKCdNM3LUgqZJtmuSl_8Y0Rx0yP83qab8VgUWWE78xfQWhOkgcCzcTk4Uchb2OJT1GQ" autocomplete="off" />
+        <div class="whiteColor baseFont">
+          <div class="stormTitle clearFont">
+            10% de réduction sur votre première commande
+          </div>
+          <div>
+            Abonnez vous à la newsletter pour ne rien louper et recevoir votre code promo
+          </div>
+
+          <div style="margin-top: 40px;">
+            <input class="newsletterEmailField" placeholder="Email" type="email" name="email" id="email" />
+          </div>
+        </div>
+        <div style="text-align: center;margin-top: 2%;">
+          <input type="submit" name="commit" value="Je m&#39;abonne" class="actionButton actionNewsletterButton" data-disable-with="Je m&#39;abonne" />
+        </div>
+</form>    </div>
+    <div style="width: 15%;"></div>
+  </div>
+
+</div>
+
+<style>
+    .newsletterSecondBlock {
+        padding: 2% !important;
+    }
+
+
+    .blackButton:hover {
+        opacity: 0.8;
+    }
+
+    .newsletterEmailField {
+        font-size: 1.4em !important;
+        border: 2px;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 3px solid white !important;
+        background: none !important;
+        border-radius: 0px !important;
+    }
+
+    .newsletterEmailField::placeholder {
+        color: white !important;
+    }
+
+</style>
+
+<div class="flexy clearFont" style="justify-content: space-between; padding: 2%;">
+  <div class="bannerBlock centeredText">
+    <div class="bannerImageBlock centeredText">
+      <img class="bannerIcon" src="/assets/shared/natural-52b93fd0c0cd70a83b3dff5d51710886ddd8a2bfa79b7bb09d63758eb813361d.png" />
+    </div>
+    <div class="bannerTitle">
+      PRODUITS NATURELS
+    </div>
+    <div class="bannerText baseFont">
+      Respectueux de la planète
+    </div>
+  </div>
+  <div class="bannerBlock centeredText">
+    <div class="bannerImageBlock centeredText">
+      <img class="bannerIcon" src="/assets/shared/made_in_france-bf8737d4b87d32f1159a98bf9b170f0d587e973ed22fe0c188feb92cd627181c.png" />
+    </div>
+    <div class="bannerTitle">
+      MADE IN FRANCE
+    </div>
+    <div class="bannerText baseFont">
+      Produit dans l'Est de la France
+    </div>
+  </div>
+  <div class="bannerBlock centeredText">
+    <div class="bannerImageBlock">
+      <img class="bannerIcon" src="/assets/shared/delivery-c2ec81582da972760b2933a4beecebeb27ae4897fd9e5ea70b0cd59f831c5421.png" />
+    </div>
+    <div class="bannerTitle">
+      LIVRAISON OFFERTE
+    </div>
+    <div class="bannerText baseFont">
+      A partir de 40.0 € d'achat
+    </div>
+  </div>
+  <div class="bannerBlock centeredText">
+    <div class="bannerImageBlock">
+      <img class="bannerIcon" src="/assets/shared/card-37c1b2d18b6d1331a207a90fc1bca2cc2623a8ff4d1072f56fbe5e3ffa6d9c81.png" />
+    </div>
+    <div class="bannerTitle">
+      PAIEMENT SÉCURISÉ
+    </div>
+    <div class="bannerText baseFont">
+      Par carte bancaire ou Paypal
+    </div>
+  </div>
+</div>
+
+<style>
+    .bannerIcon {
+        width: 60px;
+    }
+
+    .bannerTitle {
+        font-size: 1.3em;
+    }
+
+
+</style>
+
+<div class="stormGreyBackground centeredText topPadding bottomPadding">
+  <h3 class="clearFont stormTitle">
+    Suivez-nous sur instagram
+  </h3>
+  <h4 class="centeredText robotoRegBig negTopMargin">
+    <a href="https://www.instagram.com/stormskinwear/"
+       class="bigText clearFont" target=_blank style="color: black;text-decoration: underline;">
+      @stormskinwear
+    </a>
+  </h4>
+</div>
+
+
+<a class="flexy topMargin bottomMargin fullWidth" href="https://www.instagram.com/stormskinwear/" target=_blank>
+  <div style="width: 6%">
+  </div>
+  <div style="width: 20%">
+    <img class="fullWidth" alt="Notre joli instagram" src="/assets/shared/bandeau-insta1-23e96deaf6daf7be1c15575b03d9ae84bceb00b2e6a96308e0dd07113ba672c2.jpg" />
+  </div>
+  <div style="width: 2%">
+  </div>
+  <div style="width: 20%">
+    <img class="fullWidth" alt="Notre joli instagram" src="/assets/shared/bandeau-insta2-12ac6bac6a4350cf722f73b68f8878a171c9615dfdd97a05cd84188778eed98d.jpg" />
+  </div>
+  <div style="width: 2%">
+  </div>
+  <div style="width: 20%">
+    <img class="fullWidth" alt="Notre joli instagram" src="/assets/shared/bandeau-insta3-875e256105fa5de0e1d472a778e26b1f67be10f092352cc665868fdd46a612eb.jpg" />
+  </div>
+  <div style="width: 2%">
+  </div>
+  <div style="width: 20%">
+    <img class="fullWidth" alt="Notre joli instagram" src="/assets/shared/bandeau-insta4-c5777b8fb47f9441716de1f92bcbaf72ca23006e6f32ab79dd034ffee087cbe1.jpg" />
+  </div>
+  <div style="width: 6%">
+  </div>
+</a>
+
+</main>
+
+    <footer class="footer stormyBackground">
+  <div class="flexy clearFont" style="justify-content: space-between;">
+
+    <div>
+      <div class="footerTitle bottomMargin">
+        Produits
+      </div>
+
+      <div>
+        <a class="footerItem" href="/products">
+          Tous les produits
+        </a>
+      </div>
+      <div>
+        <a class="footerItem" href="/t/categories/corps">
+          Corps
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/t/categories/visage">
+          Visage
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/t/categories/mains">
+          Mains
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/t/categories/levres">
+          Lèvres
+        </a>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="footerTitle bottomMargin">
+        Størm
+      </div>
+
+      <div>
+        <a class="footerItem" href="/home/story">
+          Histoire
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/blog_articles">
+          Blog
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/home/contact">
+          Nous contacter
+        </a>
+      </div>
+      <div>
+        <a class="footerItem" href="/home/faq">
+          FAQ
+        </a>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="footerTitle bottomMargin">
+        Communauté
+      </div>
+
+      <div>
+        <a class="footerItem" href="/home/pro">
+          Devenir revendeur
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/home/join_us_pro">
+          Espace Pro
+        </a>
+      </div>
+
+      <div>
+        <a class="footerItem" href="/together">
+          Newsletter
+        </a>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="footerTitle">
+        Réseaux Sociaux
+      </div>
+
+      <div class="flexy">
+        <div class="footerIcon">
+          <a href="https://www.instagram.com/stormskinwear/" target=_blank>
+            <img class="fullWidth" src="/assets/shared/111-b57da32a5009f2faedaa58a4f91e53bdfcd777e113b92b82666cc8219f7e42ac.png" />
+          </a>
+        </div>
+        <div class="footerIcon">
+          <a href="https://www.facebook.com/stormskinwear/" target=_blank>
+            <img class="fullWidth" src="/assets/shared/222-35222cdb04c30577809a275d78c885130d1072cabc1109a88e875ea5f2eba94a.png" />
+          </a>
+        </div>
+        <div class="footerIcon">
+          <a href="https://www.tiktok.com/@stormskinwear" target=_blank>
+            <img class="fullWidth" src="/assets/shared/333-70b6975c2092dbf08af27ffb16de91d4cbb6c4a822fd39d909ab27d6fcba4054.png" />
+          </a>
+        </div>
+        <div class="footerIcon">
+          <a href="https://www.linkedin.com/company/st%C3%B8rm-skinwear/" target=_blank>
+            <img class="fullWidth" src="/assets/shared/444-32d3d6f7415362e920c8e8371024b945c52e81b99af47432348c1df7015475c9.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="topMargin">
+        <div class="footerTitle">
+          Be unstoppable
+        </div>
+        <div class="footerTitle bottomMargin">
+          together :
+        </div>
+        <div>
+          <a class="smallActionButton" href="/together">
+            Newsletter
+          </a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flexy bigTopMargin clearFont tinyFont" style="justify-content: center;">
+    <div class="footerTitle">
+      <div>
+        <a class="whiteColor" href="/home/legal_info">
+          Mentions Légales
+        </a>
+      </div>
+
+    </div>
+    <div class="footerTitle footerDivider">
+      |
+    </div>
+    <div class="footerTitle">
+      <a class="whiteColor" href="/home/terms">
+        Conditions générales de vente
+      </a>
+    </div>
+    <div class="footerTitle footerDivider">
+      |
+    </div>
+    <div class="footerTitle">
+      <a class="whiteColor" href="/home/data_privacy">
+        Protection des données
+      </a>
+    </div>
+  </div>
+
+
+</footer>
+
+
 </body>
 </html>
